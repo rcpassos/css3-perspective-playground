@@ -2,7 +2,7 @@
 
 Project based on a challenge from the [Udemy course ](https://www.udemy.com/course/complete-vue-js-developer-zero-to-mastery-vuex/).
 
-Live Demo: UPDATE THIS after the deploy
+Live Demo: https://css3-perspective-playground.onrender.com/
 
 ## Project Setup
 
