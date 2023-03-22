@@ -9,12 +9,7 @@ export const useSettingsStore = defineStore('settings', () => {
 
   const box = computed(() => {
     return {
-      transform: `
-            perspective(${perspective.value}px)
-            rotateX(${rotateX.value}deg)
-            rotateY(${rotateY.value}deg)
-            rotateZ(${rotateZ.value}deg)
-          `
+      transform: `perspective(${perspective.value}px) rotateX(${rotateX.value}deg) rotateY(${rotateY.value}deg) rotateZ(${rotateZ.value}deg)`
     }
   })
 
