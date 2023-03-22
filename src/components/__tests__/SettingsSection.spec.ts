@@ -1,26 +1,12 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest'
+import { describe, it, expect, vi } from 'vitest'
 
 import { shallowMount } from '@vue/test-utils'
 import SettingsSection from '../SettingsSection.vue'
 import { createTestingPinia } from '@pinia/testing'
 import { useSettingsStore } from '@/stores/settings'
-
-window.alert = vi.fn()
+import '../../setupTests'
 
 describe('SettingsSection', () => {
-  beforeEach(() => {
-    let clipboardData = '' //initalizing clipboard data so it can be used in testing
-    const mockClipboard = {
-      writeText: vi.fn((data) => {
-        clipboardData = data
-      }),
-      readText: vi.fn(() => {
-        return clipboardData
-      })
-    }
-    global.navigator.clipboard = mockClipboard
-  })
-
   it('renders properly', () => {
     const wrapper = shallowMount(SettingsSection, {
       global: {
